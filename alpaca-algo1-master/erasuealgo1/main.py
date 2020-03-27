@@ -9,10 +9,10 @@ manager = PortfolioManager()
 
 
 for sym in stocks_to_long():
-    manager.add_items([[sym, 0.05]])
+    manager.add_items([[sym, 0.08]])
 
-for sym in stocks_to_short():
-    manager.add_items([[sym, -0.05]])
+#for sym in stocks_to_short():
+    #manager.add_items([[sym, -0.05]])
 
 manager.format_percent(0.05)
 manager.percent_rebalance('block')
